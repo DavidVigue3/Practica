@@ -1,6 +1,3 @@
-/* estilos.css - Paleta de colores cálidos con navegación superior */
-
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +7,13 @@
 body {
     font-family: 'Georgia', 'Times New Roman', serif;
     line-height: 1.6;
-    color: #5D4037; /* Marrón oscuro para texto */
+    color: #5D4037; 
     position: relative;
     min-height: 100vh;
-    padding-top: 70px; /* Espacio para la barra de navegación fija */
+    padding-top: 70px; 
 }
 
-/* Fondo fijo con imagen cálida */
+
 body::before {
     content: '';
     position: fixed;
@@ -34,17 +31,17 @@ body::before {
     filter: sepia(0.3) brightness(0.9);
 }
 
-/* Barra de navegación superior */
+
 .nav-superior {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background: linear-gradient(to right, #8D6E63, #6D4C41); /* Degradado marrón */
+    background: linear-gradient(to right, #8D6E63, #6D4C41); 
     padding: 15px 0;
     z-index: 1000;
     box-shadow: 0 4px 15px rgba(121, 85, 72, 0.3);
-    border-bottom: 3px solid #FF9800; /* Naranja */
+    border-bottom: 3px solid #FF9800; 
 }
 
 .nav-superior ul {
@@ -61,7 +58,7 @@ body::before {
 }
 
 .nav-superior a {
-    color: #FFF8F0; /* Beige claro */
+    color: #FFF8F0; 
     text-decoration: none;
     font-size: 1.1rem;
     padding: 10px 20px;
@@ -74,7 +71,7 @@ body::before {
 }
 
 .nav-superior a:hover {
-    background-color: rgba(255, 152, 0, 0.9); /* Naranja */
+    background-color: rgba(255, 152, 0, 0.9);
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(255, 87, 34, 0.3);
@@ -88,7 +85,7 @@ body::before {
     transform: translateX(-50%);
     width: 0;
     height: 2px;
-    background-color: #FF5722; /* Naranja intenso */
+    background-color: #FF5722;
     transition: width 0.3s ease;
 }
 
@@ -96,7 +93,6 @@ body::before {
     width: 80%;
 }
 
-/* Header */
 header {
     text-align: center;
     padding: 40px 20px 30px;
@@ -122,7 +118,6 @@ header h1 {
     letter-spacing: 1.5px;
 }
 
-/* Contenedor principal */
 .contenedor-principal {
     max-width: 1100px;
     margin: 0 auto 50px;
@@ -133,7 +128,6 @@ header h1 {
     border: 1px solid #D7CCC8;
 }
 
-/* Contenido principal */
 .contenido {
     padding: 50px;
 }
@@ -178,7 +172,6 @@ article p:first-of-type {
     font-style: italic;
 }
 
-/* Footer */
 footer {
     background: linear-gradient(to right, #8D6E63, #6D4C41);
     color: #FFF8F0;
@@ -230,7 +223,6 @@ footer p:last-child {
     margin-right: auto;
 }
 
-/* Efectos adicionales */
 .contenido::before {
     content: '';
     position: absolute;
@@ -241,7 +233,6 @@ footer p:last-child {
     background: linear-gradient(to right, #FF9800, #FF5722);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
     body {
         padding-top: 60px;
@@ -311,7 +302,6 @@ footer p:last-child {
     }
 }
 
-/* Animaciones suaves */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
@@ -321,18 +311,15 @@ article {
     animation: fadeIn 0.6s ease-out;
 }
 
-/* Scroll suave */
 html {
     scroll-behavior: smooth;
 }
 
-/* Efectos de foco para accesibilidad */
 a:focus, button:focus {
     outline: 2px solid #FF9800;
     outline-offset: 3px;
 }
 
-/* Efecto de borde decorativo en el contenedor principal */
 .contenedor-principal {
     position: relative;
 }
@@ -351,9 +338,6 @@ a:focus, button:focus {
     filter: blur(5px);
 }
 
-/* Añadir al final del archivo Style.css - después de las reglas existentes */
-
-/* Estilos específicos para páginas con navegación lateral */
 .pagina-lateral .contenedor-principal {
     display: flex;
 }
@@ -368,7 +352,6 @@ a:focus, button:focus {
     width: 75%;
 }
 
-/* Título más pequeño y alineado a la izquierda para páginas secundarias */
 .pagina-secundaria header {
     text-align: left;
     padding: 30px 20px;
@@ -380,7 +363,6 @@ a:focus, button:focus {
     margin-left: 20px;
 }
 
-/* Estilos para la navegación lateral */
 .pagina-lateral nav ul {
     list-style-type: none;
     display: block;
@@ -415,17 +397,14 @@ a:focus, button:focus {
     box-shadow: 0 3px 8px rgba(255, 87, 34, 0.3);
 }
 
-/* Quitar la navegación superior en páginas con navegación lateral */
 .pagina-lateral .nav-superior {
     display: none;
 }
 
-/* Ajustar el padding-top del body para páginas sin navegación superior */
 .pagina-lateral body {
     padding-top: 0;
 }
 
-/* Responsive para navegación lateral */
 @media (max-width: 768px) {
     .pagina-lateral .contenedor-principal {
         flex-direction: column;
@@ -464,4 +443,106 @@ a:focus, button:focus {
         font-size: 1.8rem;
         margin-left: 10px;
     }
+}
+
+.pagina-ocells article {
+    margin-bottom: 50px;
+}
+
+.pagina-ocells .contenido-ocell {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.pagina-ocells .imagen-ocell {
+    flex: 0 0 300px;
+    max-width: 300px;
+    align-self: flex-start;
+}
+
+.pagina-ocells .imagen-ocell img {
+    width: 100%;
+    height: auto;
+    position: sticky;
+    top: 20px;
+}
+
+.pagina-ocells .descripcion-ocell {
+    flex: 1;
+    min-width: 300px;
+}
+
+.pagina-ocells .nombre-cientifico {
+    font-style: italic;
+    color: #8D6E63;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    border-bottom: 1px dashed #D7CCC8;
+    padding-bottom: 10px;
+    width: 100%; 
+}
+
+@media (max-width: 900px) {
+    .pagina-ocells .contenido-ocell {
+        flex-direction: column;
+    }
+    
+    .pagina-ocells .imagen-ocell {
+        flex: 0 0 auto;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    
+    .pagina-ocells .imagen-ocell img {
+        position: static;
+    }
+    
+    .pagina-ocells .descripcion-ocell {
+        min-width: 100%;
+    }
+}
+
+.pagina-mapa .contenido-mapa {
+    padding: 20px;
+    text-align: center;
+}
+
+.pagina-mapa .imagen-mapa {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pagina-mapa .imagen-mapa img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 5px solid #8D6E63;
+}
+
+.activo {
+    background-color: rgba(255, 152, 0, 0.8) !important;
+    color: white !important;
+    font-weight: bold !important;
+}
+
+@media (max-width: 768px) {
+    .pagina-ocells .contenido-ocell {
+        flex-direction: column;
+    }
+    
+    .pagina-ocells .imagen-ocell {
+        flex: 0 0 auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .pagina-mapa .imagen-mapa {
+        max-width: 95%;
+    }
+}
+
+.pagina-lateral .contenido article:first-child h2 {
+    margin-top: 0;
 }
