@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anellament - Observatorio de Aves</title>
+    <title>Mapa - Observatori d'Aus</title>
     <link rel="stylesheet" href="Style.css">
 </head>
-<body class="pagina-lateral pagina-secundaria">
+<body class="pagina-lateral pagina-secundaria pagina-mapa">
     <header>
         <div id="logo">
             <img src="ruta-del-logo.png" alt="Logo del sitio">
@@ -20,31 +20,40 @@
             <nav>
                 <ul>
                     <li><a href="Index.html">Menu Principal</a></li>
-                    <li><a href="Anellament.html" class="activo">Anellament</a></li>
-                    <li><a href="#recull">Recull d'ocells</a></li>
-                    <li><a href="#mapa">Mapa</a></li>
+                    <li><a href="Anellament.html">Anellament</a></li>
+                    <li><a href="Recull.html">Recull d'ocells</a></li>
+                    <li><a href="Mapa.html" class="activo">Mapa</a></li>
                 </ul>
             </nav>
 
             <!-- Sección derecha con contenido -->
             <section class="contenido">
                 <article>
-                    <h2>¿Qué es el Anillamiento Científico?</h2>
-                    <p>El anillamiento científico es una técnica de estudio que consiste en colocar una anilla metálica en la pata de un ave. Esta anilla lleva un código único que permite identificar individualmente al ave a lo largo de su vida.</p>
-                    <p>Cuando un ave anillada es recapturada o encontrada, podemos obtener información valiosa sobre sus movimientos, longevidad, comportamiento y estado de salud.</p>
+                    <h2>Ubicacions d'anellament</h2>
+                    
+                    <div class="contenido-mapa">
+                        <div class="imagen-mapa">
+                            <img src="imagenes/mapa-anellament.jpg" alt="Mapa d'ubicacions d'anellament" id="mapa-interactivo">
+                        </div>
+                        
+                        <div class="descripcion-mapa">
+                            <p>El mapa mostra les principals ubicacions on es realitza anellament científic d'aus a la nostra regió. Cada marcador indica un punt d'anellament actiu.</p>
+                            <p>Properament, aquest mapa serà interactiu i us permetrà fer clic en cada marcador per obtenir més informació sobre les espècies anellades en cada ubicació.</p>
+                        </div>
+                    </div>
                 </article>
             </section>
         </div>
     </main>
 
     <footer>
-        <h3>Información de Contacto</h3>
+        <h3>Informació de Contacte</h3>
         <address>
-            <p>Dirección: Calle Principal 123, Ciudad, País</p>
+            <p>Direcció: Carrer Principal 123, Ciutat, País</p>
             <p>Teléfono: +1 234 567 890</p>
-            <p>Email: info@observatorioaves.com</p>
+            <p>Email: info@observatoriaus.com</p>
         </address>
-        <p>&copy; 2023 Observatorio de Aves. Todos los derechos reservados.</p>
+        <p>&copy; 2023 Observatori d'Aus.</p>
     </footer>
 </body>
 </html>
